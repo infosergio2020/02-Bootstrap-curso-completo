@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap01",
+  "version": "1.0.0",
+  "description": "nuestro primer proyecto de nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infosergio2020/Bootstrap01.git"
+  },
+  "author": "Sergio Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infosergio2020/Bootstrap01/issues"
+  },
+  "homepage": "https://github.com/infosergio2020/Bootstrap01#readme"
+}
