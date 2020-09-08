@@ -1,0 +1,196 @@
+Para la organizacionde componentes usamos el flex 
+en particular el flex-direction este tiene 4 configuraciones 
+row, row-reverse => dispone los eventos en linea
+column, column-reverse => dispone los elementos verticalmente.
+Por otro lado esta el eje perpendicular o cross axis
+el cual varia segun sea row (axis seria vertical) o column (axis seria horizontal).
+
+Container : un area del documento que utilice flexbox se llama flex Container
+para crear un container se utilizara un display con la propiedad display con el valor 
+- flex o inline-flex, al utilizar esto lo veremos de la siguiente manera:
+1) se muestan los items en fila ya que flex-direction es row
+2) se comienza a la izquierda o desde arriba dependiendo del eje principal
+3) los items no se agrandan a lo largo del eje principal pero podrian achicarse
+4) los items se disponen a llenar toda la longitud del eje perpendicular 
+5) la propiedad flex-basis es auto; y la propiedad flex-wrap es nowrap
+
+
+ejemplo :
+<--
+Con este codigo se crean 3 columnas de igual tamaño 
+en cualquier tamaño de dispositivo
+-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                primera columna
+            </div>
+            <div class="col-sm">
+                segunda columna
+            </div>
+            <div class="col-sm">
+                tercera columna
+            </div>
+        </div>
+    </div>
+
+Observaciones: 
+
+1) El contenido estara centrado por que 
+   esta dentro de un div con clase container
+
+2) La clase row hace las veces de eje pricipal 
+   y las clases col de eje perpendicular
+
+
+
+CONTAINERS
+
+funcion --> Proveen el centrado de sus elementos 
+y ubican horizontalmente su contenido
+
+hay 2 tipos de container
+uno que brinda ancho responsive y el otro es
+cointainer-fluid que configura el ancho en 100% 
+para todos lo dipositivos
+
+ROWS
+
+funcion --> contienen columnas que las ubica horizontalmente
+cada columna presenta un padding horizontal para controlar cada una de ellas
+
+NOTA: para este sistema de grillas es importante respetar el hecho de que 
+      las clases row contengan columnas y las columnas esten siempre dentro 
+      de una row
+
+Observacion: si no especificamos el ancho de las columnas por defecto cada 
+             una de ellas ocupara el espacio proporcionalmente deacuerdo a 
+             la cantidad de columnas.
+
+por ejemplo si tenemos 5 columnas --> <div class="col-sm"> 
+cada una ocupara un ancho de 20%
+
+
+SISTEMAS DE COLUMANS 
+
+por default bootstrap maneja un sistema de 12 columnas por fila
+una forma de configurar el ancho de nuestras columnas es usar la notacion
+.col-sm-*   donde * es el numero de columnas que vamos a ocupar del 1 al 12
+
+DETALLE 
+
+bootstrap permite configurar 5 tipos de columnas de forma responsive
+para mantener el sistema de grillas responsive este sistema se le llama 
+responsive breakpoints, estos no son mas que diferentes tipos de media querys 
+que se adaptan a determinado tipos de dispositivos.
+
+Los responsive breakpoint y containers son los unicos que se definen en pixeles
+todos lo demas elementos utilizan em y rem, 
+
+extra small es menor a 576px se ve asi 
+
+1)
+2)
+
+col-md se vera asi
+
+1)  2)
+
+en extra small no se aplica col-sm-3 ni col-sm-9 por que el ancho no supera los 576px
+
+Para la mayoria de los casos donde no nos interese diferenciar los anchos 
+solo basta con utilizar col-*
+
+ALINEACION
+ejemplos de alineacion vertical hay 3 opciones
+
+1) Al comienzo
+2) Al centro 
+3) Al final
+
+
+alineacion vertical sobre la fila
+
+EJEMPLO:
+    <div class="container">
+        <div class="row aling-items-star">
+            <div class="col">1er columna</div>
+            <div class="col">2da columna</div>
+            <div class="col">3er columna</div>
+        </div>
+        <div class="row aling-items-center">
+            <div class="col">1er columna</div>
+            <div class="col">2da columna</div>
+            <div class="col">3er columna</div>
+        </div>
+        <div class="row aling-items-end">
+            <div class="col">1er columna</div>
+            <div class="col">2da columna</div>
+            <div class="col">3er columna</div>
+        </div>
+    </div>
+
+alineacion vertical por columnas
+
+EJEMPLO:
+
+    <div class="container">
+        <div class="row">
+            <div class="col aling-self-star">1er columna</div>
+            <div class="col aling-self-center">2da columna</div>
+            <div class="col aling-self-end">3er columna</div>
+        </div>
+    </div>
+
+con las clases aling-self podemos ubicar donde queramos a las
+columnas dentro de una fila.
+
+
+alineacion horizontal
+
+EJEMPLO:
+
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-4">1er item</div>
+            <div class="col-4">2do item</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4">1er item</div>
+            <div class="col-4">2do item</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-4">1er item</div>
+            <div class="col-4">2do item</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-4">1er item</div>
+            <div class="col-4">2do item</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">1er item</div>
+            <div class="col-4">2do item</div>
+        </div>
+    </div>
+
+USO DE OFFSETS Y ALINEACION
+
+EJEMPLOS:
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-3">.col-md-4 .offset-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">.col-md-6 offset-md-3</div>
+        </div>
+    </div>
+
+
+
