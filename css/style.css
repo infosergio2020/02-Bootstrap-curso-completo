@@ -1,6 +1,7 @@
     .jumbotron {
         background-color: #0278f5aa;
         color: #000000;
+        margin-top: 50px;
     }
     /* si quiero personalizar el color del boton puedo usar esta clase */
     /* .btn {

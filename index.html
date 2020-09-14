@@ -9,58 +9,68 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hello, world!</title>
+    <title>PocasPulgas!</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">PocasPulgas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsSupportedContant" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarsSupportedContant">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Precios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Terminos y condiciones</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="jumbotron">
         <h1 class="display-4">PocasPulgas</h1>
         <p class="lead">Guarderia de mascotas.</p>
     </div>
 
     <div class="container">
-        <!-- <div class="row justify-content-start"> -->
-        <div class="d-flex flex-wrap">
-            <div class="col-md-4 mb-4">
-                <i class="offset-md-4 fa-6x far fa-clock"></i>
-            </div>
-            <div class="col-md-4 mb-4">
-                <i class="offset-md-4 fa-6x fas fa-shield-alt"></i>
-            </div>
-            <div class="col-md-4 mb-4">
-                <i class="offset-md-4 fa-6x fas fa-hamburger"></i>
-            </div>
-        </div>
-
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
         <!-- <div class="row justify-content-start mb-4"> -->
         <div class="d-flex flex-wrap">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">
-                        <h3 class="text-center">Cuidamos el bienestar de tu mascota el tiempo que necesites.</h3>
+                    <div class="card-header text-center">
+                        <i class="fa-6x far fa-clock"></i>
+                        <h3>Cuidamos el bienestar de tu mascota el tiempo que necesites.</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <p>Trabajamos en horarrio corrido</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header text-center">
+                        <i class="fa-6x fas fa-shield-alt"></i>
                         <h3 class="text-center">Seguridad y bienestar para tu mascota</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <p>tenemos espacios adecuados para su comodidad y seguridad</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header text-center">
+                        <i class="fa-6x fas fa-hamburger"></i>
                         <h3 class="text-center">Alimentación, atención veterinaria, espacios verdes..</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <p>Le brindaremos toda la atención necesaria para que este siempre en optimas condiciones</p>
                     </div>
                 </div>
@@ -170,7 +180,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="fixed-bottom">
         <div class="row">
             <div class="col-sm-4 d-flex flex-column align-items-start">
                 <a href="#">Facebook</a>
