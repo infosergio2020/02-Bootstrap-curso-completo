@@ -1,6 +1,7 @@
     .jumbotron {
-        background-color: #0278f5aa;
-        color: #000000;
+        background-color: #da8949;
+        /* da8949  0278f5aa*/
+        color: #4B0082;
         margin-top: 50px;
     }
     /* si quiero personalizar el color del boton puedo usar esta clase */
@@ -8,9 +9,14 @@
     background-color: green;
 } */
     
+    body {
+        background-color: rgb(251, 225, 203);
+    }
+    
     footer {
         padding: 10px 10px 0 10px;
-        background-color: #0278f5aa;
+        background-color: #da8949;
+        /* da8949 */
         color: #000000;
         margin-bottom: 0px;
         margin-top: 10px;
@@ -24,6 +30,11 @@
         /* padding: 2px 0px 2px 0px; */
         /*top right bottom left*/
         margin-top: 20px;
+        background-color: #da8949;
+    }
+    
+    .card-title {
+        color: #4B0082;
     }
     
     .btn-reserva {
@@ -34,4 +45,8 @@
     
     .footer-addres-icon {
         padding-right: 10px;
+    }
+    
+    .btn {
+        background-color: #4B0082;
     }
