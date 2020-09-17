@@ -20,8 +20,8 @@
         /*propiedad flex |  clex-basis */
         /* cuanto queremos que cresca nuestros elmentos |  de cuanto va a ser el ancho  */
         /* 1 significa que queremos que se mantenga exacta ; 2 queremos que cresca hasta el doble de ancho |  cual es el ancho definido*/
-        flex: 1 150px;
-        padding: 2px 2px 2px 5px;
+        flex: 1 200px;
+        /* padding: 2px 0px 2px 0px; */
         /*top right bottom left*/
         margin-top: 20px;
     }
@@ -29,6 +29,7 @@
     .btn-reserva {
         width: 100%;
         /* position: absolute; */
+        border-radius: 0px;
     }
     
     .footer-addres-icon {
