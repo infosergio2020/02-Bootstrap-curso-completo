@@ -41,8 +41,17 @@
                 <li class="breadcrumb-item active" aria-current="page">Home</li>
             </ol>
         </nav>
+
+        <!-- NOTA: se utiliza el aria-controls para distinguir entre los ditintos componentes -->
+        <div class="row">
+            <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cuidado" aria-expanded="false" aria-controls="multiCollapse1">Cuidados</button></div>
+            <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seguridad" aria-expanded="false" aria-controls="multiCollapse2">Seguridad</button></div>
+            <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#alimentacion" aria-expanded="false" aria-controls="multiCollapse3">Alimentación</button></div>
+        </div>
+
+
         <!-- <div class="row justify-content-start mb-4"> -->
-        <div class="d-flex flex-wrap">
+        <!-- <div class="d-flex flex-wrap">
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header text-center">
@@ -76,7 +85,29 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="cuidado">
+                <p>
+                    <h3>Cuidamos el bienestar de tu mascota el tiempo que necesites.</h3>
+                    <p>Trabajamos en horario corrido</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="seguridad">
+                <p>
+                    <h3>Seguridad y bienestar para tu mascota</h3>
+                    <p>tenemos espacios adecuados para su comodidad y seguridad</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="alimentacion">
+                <p>
+                    <h3>Alimentación, atención veterinaria, espacios verdes.</h3>
+                    <p>Le brindaremos toda la atención necesaria para que este siempre en optimas condiciones</p>
+                </p>
+            </div>
         </div>
+
         <img src="images/pocaspulgas.jpg" class="img-fluid" alt="Responsive imagen">
         <!-- <div class="row justify-content-start"> -->
         <div class="d-flex flex-wrap">

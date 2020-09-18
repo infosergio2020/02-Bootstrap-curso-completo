@@ -129,16 +129,53 @@
             </div>
 
             <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                <div class="d-flex justify-content-center">
-                    <div class="card" style="width:18rem;">
-                        <div class="card-header" style="background-color:blue; color: aliceblue;">
-                            Tarjetas aceptadas
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                    Tarjeta Básica
+                                </button>
+                            </h5>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Tarjeta básica</li>
-                            <li class="list-group-item">Tarjeta VIP</li>
-                            <li class="list-group-item">Tarjeta Black</li>
-                        </ul>
+
+                        <div class="collapse" id="collapseBasica" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 3 cuotas sin interés.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseVIP" aria-expanded="false" aria-controls="collapseVIP">
+                                    Tarjeta VIP
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div class="collapse" id="collapseVIP" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 6 cuotas sin interés. Tras su proxima compra recibira una canasta de obsequios para disfrutar con tu mascota.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBlack">
+                                Tarjeta Black
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div class="collapse" id="collapseBlack" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                        <div class="card-body">
+                            Podes reservar en 12 cuotas sin interés. Tras su proxima compra recibira una canasta de obsequios para disfrutar con tu mascota y una sesion de baño, peluqueria y paseo gratis.
+                        </div>
                     </div>
                 </div>
             </div>
