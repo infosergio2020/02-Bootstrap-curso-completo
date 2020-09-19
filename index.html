@@ -120,7 +120,8 @@
                 </div>
 
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Mas detalles</button>
+                    <button class="btn btn-primary btn-reserva " data-toggle="modal" data-target="#detalle01"> Mas detalles</button>
+
                 </div>
 
             </div>
@@ -221,15 +222,98 @@
                     <img src="images/encantador.jpg" alt="imagen" class="card-img-top mb-2">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">Entradores profesionales con 20 años de experiencia, listos para poner en orden a tu mascota</p>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
 
                 <div>
                     <button class="btn btn-primary btn-reserva"> Mas detalles</button>
                 </div>
+            </div>
 
+
+
+        </div>
+    </div>
+    <!-- IMPLEMENTACION DEL MODAL -->
+    <!-- El modal puede definirse en cualquier lado ya que no se ve -->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="empleModalLabel">Contacto con la Guarderia</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tu email:</label>
+                            <input type="text" class="form-control" id="recipient.name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea id="message-text" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success">Enviar</button>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="detalle01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="empleModalLabel">Reserva del producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tu email:</label>
+                            <input type="text" class="form-control" id="recipient.name">
+                        </div>
+                        <div class="form-group">
+                            <label for="marca-text" class="col-form-label">Marca:</label>
+                            <select id="marca-text" class="form-control">
+                                <option value="Dogchow">Dogchow</option>
+                                <option value="Royal Canin">Royal Canin</option>
+                                <option value="Eukanuba">Eukanuba</option>
+                                <option value="Purina Pro Plan">Purina Pro Plan</option>
+                                <option value="Pedigree">Pedigree</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cantidad-text" class="col-form-label">Cantidad:</label>
+                            <select id="cantidad-text" class="form-control">
+                                <option value="20kg">20kg</option>
+                                <option value="10kg">10kg</option>
+                                <option value="5kg">5kg</option>
+                                <option value="2kg">2kg</option>
+                                <option value="1kg">1kg</option>
+                            </select>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success mr-4">Ver el catalogo</button>
+                    <button class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- <footer class="fixed-bottom"> -->
     <footer>
