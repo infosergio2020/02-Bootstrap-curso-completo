@@ -113,7 +113,7 @@
         <div class="d-flex flex-wrap">
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Comida/Tasones </h5>
+                    <h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Pregunta por descuentos en la compra al por mayor">Comida/Tasones </h5>
                     <img src="images/comida_tasones.jfif" alt="imagen" class="card-img-top mb-2">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">Gran variedad marcas y precios</p>
@@ -125,10 +125,11 @@
                 </div>
 
             </div>
+            <!-- EN ESTA PARTE SE VAN A USAR TOOLTIPS -->
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Ropa/Correas/Bozales</h5>
-                    <img src="images/ropa_correas.jpg" alt="imagen" class="card-img-top mb-2">
+                    <h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="las primeras 20 reservas cuentan con 20% de descuento">Ropa/Correas/Bozales</h5>
+                    <img src="images/ropa_correas.jpg" class="card-img-top mb-2" alt="Responsive image">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">Talles grandes,medianos y chicos, hacemos encargos</p>
                 </div>
@@ -166,7 +167,7 @@
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Paseos.</h5>
+                    <h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Manten siempre en forma y feliz a tu mascota">Paseos.</h5>
                     <img src="images/paseo.jfif" alt="imagen" class="card-img-top mb-2">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">$60 la hora</p>
@@ -192,7 +193,7 @@
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Vacunacion.</h5>
+                    <h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="La salud de tu mascota es importante manten su libreta al dia">Vacunacion.</h5>
                     <img src="images/vacunas.jfif" alt="imagen" class="card-img-top mb-2">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">Con turno previo $150 + costo del medicamento</p>
@@ -205,7 +206,7 @@
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Adopciones.</h5>
+                    <h5 class="card-title text-center" data-toggle="tooltip" title="solo mayores de 18 o un adulto a cargo puede retirar a la mascota">Adopciones.</h5>
                     <img src="images/adopcion.jpg" alt="imagen" class="card-img-top mb-2">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">Si estas buscando tu primera mascota nosotros la tenemos</p>
@@ -226,7 +227,7 @@
                 </div>
 
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Mas detalles</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta por las promociones vigentes!!!"> Mas detalles</button>
                 </div>
             </div>
 
@@ -345,8 +346,18 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper-utils.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- SCRIPT DE ACTIVACION DE TOOLTIPS -->
+    <script>
+        $(function() {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+        $(function() {
+            $("[data-toggle='popover']").popover();
+        });
+    </script>
+
 </body>
 
 </html>
