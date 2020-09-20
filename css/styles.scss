@@ -1,0 +1,71 @@
+// las variables se definen con el signo $
+$orange01: #da8949;
+$violet01: #4B0082;
+$white01:#fbe1cb;
+$black01:#000000;
+// Ahora se va a definir un MIXIN
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.jumbotron {
+    background-color: $orange01;
+    /* da8949  0278f5aa*/
+    color: $violet01;
+    @include margenes(50px, 0);
+}
+
+
+/* si quiero personalizar el color del boton puedo usar esta clase */
+
+
+/* .btn {
+background-color: green;
+} */
+
+body {
+    background-color: $white01;
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: $orange01;
+    /* da8949 */
+    color: $black01;
+    @include margenes(10px, 0px);
+}
+
+.card-hotel {
+    /*propiedad flex |  clex-basis */
+    /* cuanto queremos que cresca nuestros elmentos |  de cuanto va a ser el ancho  */
+    /* 1 significa que queremos que se mantenga exacta ; 2 queremos que cresca hasta el doble de ancho |  cual es el ancho definido*/
+    flex: 1 200px;
+    /* padding: 2px 0px 2px 0px; */
+    /*top right bottom left*/
+    @include margenes(20px, 0px);
+    background-color: $orange01;
+}
+
+.card-title {
+    color: $violet01;
+}
+
+.btn-reserva {
+    width: 100%;
+    /* position: absolute; */
+    border-radius: 0px;
+}
+
+.footer-addres-icon {
+    padding-right: 10px;
+}
+
+
+/* .btn {
+    background-color: #4B0082;
+} */
+
+.tab-content {
+    padding-top: 10px;
+}
