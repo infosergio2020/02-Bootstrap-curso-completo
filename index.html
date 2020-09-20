@@ -246,7 +246,7 @@
                     <img src="images/encantador.jpg" alt="imagen" class="card-img-top mb-2">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">Entradores profesionales con 20 años de experiencia, listos para poner en orden a tu mascota</p>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                 </div>
 
                 <div>
@@ -381,6 +381,28 @@
         });
         $('.carousel').carousel({
             interval: 8000
+        });
+
+        // $('#contacto') esto genera una query en el DOM y busca todo lo que se aplique en la query en este caso # (es el id)
+        $('#contacto').on('show.bs.modal', function(e) { //.on(evento,funcion(e){comportamiento}) esto es para suscribirse al evento de mostrar el modal
+            console.log('el modal se esta mostrando');
+            $('#contactoBtn').removeClass('btn-success');
+            $('#contactoBtn').addClass('btn-secondary');
+            $('#contactoBtn').prop('disabled', true);
+        });
+
+        $('#contacto').on('shown.bs.modal', function(e) { //.on(evento,funcion(e){comportamiento}) esto es para suscribirse al evento de mostrar el modal
+            console.log('el modal se mostró');
+        });
+        $('#contacto').on('hide.bs.modal', function(e) { //.on(evento,funcion(e){comportamiento}) esto es para suscribirse al evento de mostrar el modal
+            console.log('se oculta el modal');
+        });
+        $('#contacto').on('hidden.bs.modal', function(e) { //.on(evento,funcion(e){comportamiento}) esto es para suscribirse al evento de mostrar el modal
+            console.log('se ocultó el modal');
+            $('#contactoBtn').removeClass('btn-secondary');
+            $('#contactoBtn').addClass('btn-success');
+            $('#contactoBtn').prop('disabled', false);
+
         });
     </script>
 
