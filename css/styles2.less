@@ -1,19 +1,19 @@
 // las variables se definen con el signo $
-$orange01: #e47927;
-$violet01: #4B0082;
-$white01:#fbe1cb;
-$black01:#000000;
+@orange01: #da8949;
+@violet01: #4B0082;
+@white01:#fbe1cb;
+@black01:#000000;
 // Ahora se va a definir un MIXIN
-@mixin margenes($top, $bottom) {
-    margin-top: $top;
-    margin-bottom: $bottom;
+.margenes(@top:0px, @bottom:0px) {
+    margin-top: @top;
+    margin-bottom: @bottom;
 }
 
 .jumbotron {
-    background-color: $orange01;
+    background-color: @orange01;
     /* da8949  0278f5aa*/
-    color: $violet01;
-    @include margenes(50px, 0);
+    color: @violet01;
+    .margenes(50px,0px);
 }
 
 
@@ -25,15 +25,15 @@ background-color: green;
 } */
 
 body {
-    background-color: $white01;
+    background-color: @white01;
 }
 
 footer {
     padding: 10px 10px 0 10px;
-    background-color: $orange01;
+    background-color: @orange01;
     /* da8949 */
-    color: $black01;
-    @include margenes(10px, 0px);
+    color: @black01;
+    .margenes(10px,0px);
 }
 
 .card-hotel {
@@ -43,12 +43,12 @@ footer {
     flex: 1 200px;
     /* padding: 2px 0px 2px 0px; */
     /*top right bottom left*/
-    @include margenes(20px, 0px);
-    background-color: $orange01;
+    .margenes(10px,0px);
+    background-color: @orange01;
 }
 
 .card-title {
-    color: $violet01;
+    color: @violet01;
 }
 
 .btn-reserva {
