@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-barra fixed-top">
         <a class="navbar-brand" href="#">PocasPulgas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsSupportedContant" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,10 +45,10 @@
         </nav>
 
         <!-- NOTA: se utiliza el aria-controls para distinguir entre los ditintos componentes -->
-        <div class="row">
-            <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cuidado" aria-expanded="false" aria-controls="multiCollapse1">Cuidados</button></div>
-            <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seguridad" aria-expanded="false" aria-controls="multiCollapse2">Seguridad</button></div>
-            <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#alimentacion" aria-expanded="false" aria-controls="multiCollapse3">Alimentación</button></div>
+        <div class="row mb-2">
+            <div class="col-md-4 col-3"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cuidado" aria-expanded="false" aria-controls="multiCollapse1">Cuidados</button></div>
+            <div class="col-md-4 col-3"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seguridad" aria-expanded="false" aria-controls="multiCollapse2">Seguridad</button></div>
+            <div class="col-md-4 col-3"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#alimentacion" aria-expanded="false" aria-controls="multiCollapse3">Alimentación</button></div>
         </div>
 
         <div class="row">
@@ -100,7 +100,7 @@
         <div class="d-flex flex-wrap">
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
                 <div class="card-body">
-                    <h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Pregunta por descuentos en la compra al por mayor">Comida/Tasones </h5>
+                    <h5 class="card-title text-center" data-toggle="tooltip" data-placement="top" title="Pregunta por descuentos en la compra al por mayor">Comida/Tasones</h5>
                     <img src="images/comida_tasones.jpg" alt="imagen" class="card-img-top mb-2">
                     <h6 class="card-subtitle text-muted">fecha de publicación 17/09/2020</h6>
                     <p class="card-text">Gran variedad marcas y precios</p>
@@ -134,7 +134,7 @@
                 </div>
 
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Mas detalles</button>
+                    <button class="btn btn-primary btn-reserva " data-toggle="modal" data-target="#detalle02"> Mas detalles</button>
                 </div>
 
             </div>
@@ -160,7 +160,7 @@
                 </div>
 
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Mas detalles</button>
+                    <button class="btn btn-primary btn-reserva " data-toggle="modal" data-target="#detalle03"> Mas detalles</button>
                 </div>
 
             </div>
@@ -173,7 +173,7 @@
                 </div>
 
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Mas detalles</button>
+                    <button class="btn btn-primary btn-reserva " data-toggle="modal" data-target="#detalle04"> Mas detalles</button>
                 </div>
 
             </div>
@@ -186,7 +186,7 @@
                 </div>
 
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Mas detalles</button>
+                    <button class="btn btn-primary btn-reserva " data-toggle="modal" data-target="#detalle05"> Mas detalles</button>
                 </div>
 
             </div>
@@ -199,7 +199,7 @@
                 </div>
 
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Mas detalles</button>
+                    <button class="btn btn-primary btn-reserva " data-toggle="modal" data-target="#detalle06"> Mas detalles</button>
                 </div>
 
             </div>
@@ -252,7 +252,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="detalle01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="detalle01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -291,13 +291,12 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success mr-4">Ver el catalogo</button>
+                    <a class="btn btn-success mr-4" href="productos.html"> Ver el catalogo</a>
                     <button class="btn btn-success">Enviar</button>
                 </div>
             </div>
         </div>
     </div>
-
 
 
 
@@ -329,7 +328,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- build:js dist/index.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

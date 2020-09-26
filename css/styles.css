@@ -1,24 +1,55 @@
+.navbar {
+  background-color: #4B0082;
+}
+
+.badge-fondo {
+  background-color: #4B0082;
+}
+
+.item-catalogo {
+  text-transform: uppercase;
+}
+
+.item-catalogo h1 {
+  font-weight: 900;
+}
+
+.item-catalogo h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn-fondo-catalogo {
+  background-color: #0d800d;
+  color: aliceblue;
+  font-weight: 700;
+  width: 100%;
+}
+
 .jumbotron {
   background-color: #e47927;
   /* da8949  0278f5aa*/
   color: #4B0082;
   margin-top: 50px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /* si quiero personalizar el color del boton puedo usar esta clase */
 /* .btn {
 background-color: green;
 } */
 body {
-  background-color: #fbe1cb; }
+  background-color: #fbe1cb;
+}
 
 footer {
   padding: 10px 10px 0 10px;
   background-color: #e47927;
   /* da8949 */
-  color: #000000;
+  color: #0a0a0a;
   margin-top: 10px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 .card-hotel {
   /*propiedad flex |  clex-basis */
@@ -29,21 +60,28 @@ footer {
   /*top right bottom left*/
   margin-top: 20px;
   margin-bottom: 0px;
-  background-color: #e47927; }
+  background-color: #e47927;
+}
 
 .card-title {
-  color: #4B0082; }
+  color: #4B0082;
+}
 
 .btn-reserva {
   width: 100%;
   /* position: absolute; */
-  border-radius: 0px; }
+  border-radius: 0px;
+}
 
 .footer-addres-icon {
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 /* .btn {
     background-color: #4B0082;
 } */
 .tab-content {
-  padding-top: 10px; }
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

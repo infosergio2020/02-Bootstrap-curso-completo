@@ -1,12 +1,41 @@
 // las variables se definen con el signo $
 $orange01: #e47927;
-$violet01: #4B0082;
+// $violet01: #4B0082;
+$violet01: #b1af37;
 $white01:#fbe1cb;
-$black01:#000000;
+$black01:#0a0a0a;
 // Ahora se va a definir un MIXIN
 @mixin margenes($top, $bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
+}
+
+.navbar {
+    background-color: $violet01;
+}
+
+.badge-fondo {
+    background-color: $violet01;
+}
+
+.item-catalogo {
+    text-transform: uppercase;
+}
+
+.item-catalogo h1 {
+    font-weight: 900;
+}
+
+.item-catalogo h5 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-fondo-catalogo {
+    background-color: #0d800d;
+    color: aliceblue;
+    font-weight: 700;
+    width: 100%;
 }
 
 .jumbotron {
